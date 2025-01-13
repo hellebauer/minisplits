@@ -1,14 +1,15 @@
-Anbei eine HA Automation fuer meine Mitsubishi SRK/SRC  bzgl. Taktvermeidung. Funktioniert auch wahrscheinlich fuer Daikin, usw. 
+Anbei eine HomeAssistant Automation fuer meine Mitsubishi SRK/SRC  bzgl. Taktvermeidung. Funktioniert auch wahrscheinlich fuer Daikin, usw. 
 Leider war es nicht moeglich Kommentare im YAML einzufuegen, weil HA diese sofort wieder entfernt..... 
 
 
-Dieses Script ist ein Spin-off von [friedolin1](https://akkudoktor.net/u/friedolin1) .   Damit dieses Script funktioniert brauchst Du einen externen Raumtemperatursensor, welcher in HA sichtbar ist. Dieser sollte so im Raum plaziert sein dass er nicht von der Minisplit angeblasen wird.
+Dieses Script ist ein Spin-off von [friedolin1](https://akkudoktor.net/u/friedolin1) .   Damit dieses Script funktioniert brauchst Du einen externen Raumtemperatursensor, welcher in HA sichtbar ist. Dieser sollte so im Raum plaziert sein dass er nicht von der Minisplit angeblasen wird.  Solange das Script aktiv ist sollte die Raumsolltemepratur nur via HomeAssistant eingestellt werden. 
+Eingaben per Fernbedienung sind bzgl. Eco, Silent, FAN, Betriebsmodi, Ein/Aus  moeglich. Jedoch werden Temperatureingaben per Fernbedienung vom aktiven Scripts ueberschrieben. 
 
 * Passe Script folgendermassen an:
--Ersetzte [Gerät] mit deiner Klimaanlage (z.B. climate.ac_kueche) 
--Ersetzte [Solltemperaturregler] mit deinem Temperaturregler (z.B. input_number.solltemp_kueche)
--Ersetzte [Boolean] mit einem Helfer (z.B. input_boolean.boolkuechewarzuwarm)
--Ersetzte [RaumTemperaturSensor] mit deinem TemperaturSensor (z.B. sensor.zigbeekueche)
+  -Ersetzte [Gerät] mit deiner Klimaanlage (z.B. climate.ac_kueche) 
+  -Ersetzte [Solltemperaturregler] mit deinem Temperaturregler (z.B. input_number.solltemp_kueche)
+  -Ersetzte [Boolean] mit einem Helfer (z.B. input_boolean.boolkuechewarzuwarm)
+  -Ersetzte [RaumTemperaturSensor] mit deinem TemperaturSensor (z.B. sensor.zigbeekueche)
 
 Beachte: Beim Ersetzen verschwinden die eckigen Klammern [  ] der Platzhalter.
 
